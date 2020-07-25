@@ -77,6 +77,7 @@ void executeTests() {
         executeTest(currentTest);
         currentTest = currentTest->prev;
     }
+    getchar();
     exit(1);
 }
 
