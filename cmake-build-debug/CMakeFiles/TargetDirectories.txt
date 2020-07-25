@@ -1,0 +1,3 @@
+/cygdrive/c/Users/Master/CLionProjects/test-checker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/Master/CLionProjects/test-checker/cmake-build-debug/CMakeFiles/test_checker.dir
+/cygdrive/c/Users/Master/CLionProjects/test-checker/cmake-build-debug/CMakeFiles/edit_cache.dir
