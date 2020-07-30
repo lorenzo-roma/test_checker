@@ -29,7 +29,7 @@ char toExecute[MAX_LENGTH + 1];
 
 int main() {
     testList = NULL;
-    printf("Insert path to program to execute:\n");
+    //printf("Insert path to program to execute:\n");
     fgets(toExecute, MAX_LENGTH, stdin);
     strtok(toExecute, "\n");
     for (int i = 0; i < 99; i++) {
@@ -40,7 +40,7 @@ int main() {
 }
 
 void executeCommand() {
-    printf("Do you want to add a test [y/n]?\n");
+    //printf("Do you want to add a test [y/n]?\n");
     int c = getchar();
     getchar();
     if (c=='y') {
@@ -52,9 +52,9 @@ void executeCommand() {
 
 Test *getTest() {
     Test *newTest = (Test *) malloc(sizeof(Test));
-    printf("Insert path to input test: \n");
+    //printf("Insert path to input test: \n");
     fgets(newTest->inputPath, MAX_LENGTH, stdin);
-    printf("Insert path to output test: \n");
+    //printf("Insert path to output test: \n");
     fgets(newTest->outputPath, MAX_LENGTH, stdin);
     strtok(newTest->inputPath, "\n");
     strtok(newTest->outputPath, "\n");
@@ -130,7 +130,7 @@ int compareFiles(char*path1, char*path2){
             printf("\033[1;31m");
             printf(" \nTest Failed [✗] at ");
             printf("Line: %d, col: %d\n", line, col);
-            printf("\033[0m;");
+            printf("\033[0m");
             char  command[1024] = "rm ";
             strcat(command, OUTPUT_TEMP);
             system(command);
